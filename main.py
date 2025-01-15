@@ -754,7 +754,7 @@ with gr.Blocks(head=head) as ui:
     )
 
     ui.load(
-        fn=lambda: (os.getenv('OPENAI_API_KEY'), os.getenv('ELEVENLABS_DEVELOPMENT_API_KEY')),
+        fn=lambda: (os.getenv('AUTO_FOLEY_DEFAULT_VISION_LM_API_KEY'), os.getenv('AUTO_FOLEY_DEFAULT_TTSFX_API_KEY')),
         outputs=[vision_lm_api_key_state, ttsfx_api_key_state]
     )
 
