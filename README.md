@@ -4,7 +4,7 @@
 <a href="https://github.com/DODI-Research/auto-foley-editor" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/github-white?logo=github&logoColor=black"></a>
 <a href="https://huggingface.co/spaces/DODI-Research/auto-foley-editor" target="_blank"><img alt="Open in Spaces" src="https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm-dark.svg"></a>
 </div>
-# Auto-Foley Editor
+
 Gradio interface connecting multiple AI services together to help the user add sound to an otherwise silent video.
 
 ## Installation
