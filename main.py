@@ -371,7 +371,7 @@ def overwrite_changes_to_selected_audio_source(volume, audio_path, prompt, selec
         return all_audio_sources, selected_audio_source
     
     selected_slug = selected_audio_source['SourceSlugID']
-    updated_source = selected_audio_source.copy()
+    updated_source = get_audio_source_by_slug(all_audio_sources, selected_slug)
     updated_source.update({
         'SoundDescription': prompt,
         'AudioPath': audio_path,
@@ -543,7 +543,7 @@ with gr.Blocks(head=head) as ui:
 
             with gr.Accordion("Edit Audio Source Properties", open=False) as selected_source_accordion:
                 with gr.Group():
-                    selected_audio_volume_slider = gr.Slider(label="Volume", minimum=0.0, maximum=1.0, step=0.01, value=1.0)
+                    selected_audio_volume_slider = gr.Slider(label="Volume", minimum=0.0, maximum=2.0, step=0.01, value=1.0)
                     selected_audio_player = gr.Audio(label="Audio", type="filepath")
                 with gr.Accordion("Generate New Audio", open=False):
                     selected_audio_prompt_textbox = gr.Textbox(label="Prompt")
