@@ -1,0 +1,15 @@
+#frame_interval_slider input[type="range"] {
+    --range_progress_inverted: calc(100% - var(--range_progress));
+}
+
+#frame_interval_slider input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, var(--color-accent) var(--range_progress_inverted), var(--neutral-200) var(--range_progress_inverted));
+}
+
+#frame_interval_slider input[type="range"]::-moz-range-track {
+    background: linear-gradient(to right, var(--color-accent) var(--range_progress_inverted), var(--color-accent) var(--range_progress_inverted));
+}
+
+#frame_interval_slider .slider_input_container {
+    direction: rtl;
+}

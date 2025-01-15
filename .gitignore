@@ -1,0 +1,10 @@
+output_videos/*
+*.mp4
+
+.gradio/
+.venv/
+venv/
+
+**/__pycache__/
+*.pyc
+*.pyo
