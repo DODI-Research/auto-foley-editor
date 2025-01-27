@@ -446,7 +446,7 @@ with gr.Blocks(head=head) as ui:
                                 minimum=1,
                                 maximum=max_interval,
                                 step=1,
-                                value=frame_rate,
+                                value=math.ceil(frame_rate),
                                 label=f"Frame Interval ({max_interval}-1)"
                             )
 
